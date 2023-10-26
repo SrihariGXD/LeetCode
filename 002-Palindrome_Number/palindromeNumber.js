@@ -44,6 +44,17 @@ let x = (num)=>{
         return true;
 }
 }
-console.log(x(-234));
+//console.log(x(-234));
 
 //Solution 3 - Without converting the number to a string
+let isPalindrome = (num)=>{
+    let reverse = 0;
+    let numCopy = num;
+    while(numCopy>0){
+        const digit = numCopy % 10;
+        reverse = reverse * 10 + digit;
+        numCopy = Math.floor(numCopy/10);
+    }
+    return reverse===num;
+}
+//console.log(isPalindrome(-121));
