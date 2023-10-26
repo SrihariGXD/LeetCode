@@ -23,18 +23,12 @@ While I've made an effort to ensure their correctness, there may be edge cases o
 
 The repository is organized as follows:
 
-LeetCode-JavaScript-Solutions
-│
-├── 001_Two_Sum
-│ ├── solution.js
-│ └── README.md
-│
-├── 002_Add_Two_Numbers
-│ ├── solution.js
-│ └── README.md
-│
-├── ...
-│
+LeetCode
+--001-Two_Sum
+  --twoSum.js
+--002-Palindrome_Number
+  --palindromeNumber.js
+--....
 
 Feel free to explore the specific problem directories to find the JavaScript solutions you're interested in.
 
