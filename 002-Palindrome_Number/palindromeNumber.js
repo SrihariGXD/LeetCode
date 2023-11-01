@@ -58,3 +58,17 @@ let isPalindrome = (num)=>{
     return reverse===num;
 }
 //console.log(isPalindrome(-121));
+/* Note: The issue here is that JavaScript's floating-point representation may not accurately handle very large integers like the one in your example, leading to inaccuracies in the reversed number. 
+This is why the code returns false even though the number is a palindrome. To accurately check for palindromes with large numbers, you should convert the number to a string and compare the characters as shown in the revised code in my previous response.*/
+
+//Solution 4 - For Larger numbers
+let isPalindrome = (num) =>{
+    var str = num.toString();
+    let len = str.length();
+    for(let i=0;i<len/2;i++){
+        if(str[i] !== str[len-1-i]){
+            return false;
+        }
+    }
+return true;
+}
